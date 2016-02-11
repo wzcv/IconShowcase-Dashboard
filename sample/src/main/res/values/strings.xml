@@ -48,8 +48,6 @@
         <item>@string/facebook</item>
         <item>@string/google_plus</item>
         <item>@string/join_community</item>
-        <item>@string/youtube</item>
-        <item>@string/twitter</item>
         <item>@string/play_store</item>
     </string-array>
 
