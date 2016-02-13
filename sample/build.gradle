@@ -41,10 +41,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
 
     //Main library
-    compile 'com.github.jahirfiquitiva:IconShowcase:1.3@aar'
+    compile 'com.github.jahirfiquitiva:IconShowcase:1.4@aar'
 
 	//Android support libraries needed to build the sample
     compile 'com.android.support:appcompat-v7:23.1.1@aar'
