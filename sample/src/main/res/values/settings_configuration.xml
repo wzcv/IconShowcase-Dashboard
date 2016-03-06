@@ -18,24 +18,26 @@
   ~
   -->
 
-<!--
-  ~
-  -->
-
 <resources>
 
-    <!-- These texts are shown in Zooper -->
-    <string name="zooper_pack_name">@string/app_name</string>
-    <string name="zooper_pack_desc">Cool widgets</string>
-    <string name="zooper_pack_author">@string/iconpack_author_name</string>
+    <!--
+    Do you want to allow users to change app theme?
+    True, means yes.
+    False, means no.
+    -->
+    <bool name="allow_user_theme_change">true</bool>
 
     <!--
-    If set to 0, the user will not be allowed to save the templates you provide
-    If set to 1, the user will be allowed to save them
+    Do you want to allow users to hide the app icon?
+    True, means yes.
+    False, means no.
     -->
-    <integer name="zooper_pack_allowsave">0</integer>
+    <bool name="allow_user_to_hide_app_icon">true</bool>
 
-    <!-- This is the icon that will be shown in Zooper -->
-    <drawable name="zooper_pack_icon">@mipmap/ic_launcher</drawable>
+    <!-- Default Navigation Bar value
+    True, means colored.
+    False, means black.
+    -->
+    <bool name="color_navbar_by_default">true</bool>
 
 </resources>

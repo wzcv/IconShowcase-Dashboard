@@ -18,17 +18,26 @@
   ~
   -->
 
-<!--
-  ~
-  -->
+<resources>
 
-<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <!-- Provide a list of wallpapers -->
-    <string-array name="wallpapers">
-        <item>circles_wall</item>
-    </string-array>
+    <!--
+    Do you want the "ALL ICONS" tab to be generated automatically?
+    If you are sure you have put all the icons in categories.
+    True, means yes.
+    False, means no.
+    -->
+    <bool name="auto_generate_all_icons">false</bool>
 
-    <!-- This wallpaper will be used when a user applies the theme -->
-    <string name="default_wallpaper">circles_wall</string>
+    <!--
+    Setup the columns amount you want in different sections
+    -->
+    <!-- PHONES - PORTRAIT MODE -->
+    <integer name="icons_columns_normal_portrait">4</integer>
+    <!-- PHONES - LANDSCAPE MODE -->
+    <integer name="icons_columns_normal_landscape">6</integer>
+    <!-- TABLETS - PORTRAIT MODE -->
+    <integer name="icons_columns_tablet_portrait">8</integer>
+    <!-- TABLETS - LANDSCAPE MODE -->
+    <integer name="icons_columns_tablet_landscape">10</integer>
 
 </resources>
