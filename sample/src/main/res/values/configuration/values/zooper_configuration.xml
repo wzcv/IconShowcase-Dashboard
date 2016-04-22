@@ -31,7 +31,7 @@
     <!-- This is the icon that will be shown in Zooper -->
     <drawable name="zooper_pack_icon">@drawable/ic_na_launcher</drawable>
 
-	<!--
+    <!--
     If you include Zooper widgets, do any of them need MediaUtilities to work properly?
     True, means yes.
     False, means no.
@@ -39,12 +39,12 @@
     <bool name="mu_needed">false</bool>
 
     <!--
-    Do you want to use the cards based About/Credits section?
-    True, means the About/Credits section will have cards.
-    False, means such section will show the list.
+    If you include Zooper widgets, do any of them need Kolorette to work properly?
+    True, means yes.
+    False, means no.
     -->
-    <bool name="cards_credits">true</bool>
-	
+    <bool name="kolorette_needed">false</bool>
+
     <!--
     Do you want the Zooper widgets previews background to be removed?
     This may result in showing some incorrect previews.

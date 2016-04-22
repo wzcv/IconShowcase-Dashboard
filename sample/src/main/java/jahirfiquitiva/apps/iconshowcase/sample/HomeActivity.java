@@ -24,31 +24,71 @@
 package jahirfiquitiva.apps.iconshowcase.sample;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import jahirfiquitiva.iconshowcase.activities.ShowcaseActivity;
+import jahirfiquitiva.iconshowcase.utilities.Utils;
 
-public class HomeActivity extends ShowcaseActivity {
+public class HomeActivity extends AppCompatActivity {
+
+    private static final boolean
+            ENABLE_DONATIONS = false,
+
+    ENABLE_GOOGLE_DONATIONS = false,
+            ENABLE_PAYPAL_DONATIONS = false,
+            ENABLE_FLATTR_DONATIONS = false,
+            ENABLE_BITCOIN_DONATIONS = false,
+
+    ENABLE_LICENSE_CHECK = true,
+            ENABLE_AMAZON_INSTALLS = false;
+
+    private static final String GOOGLE_PUBLISHER_KEY = "Insert key here";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //the ones below are the defaults; you may remove them if you don't need them or modify them accordingly
-        enableDonations(false);
-        enableGoogleDonations(false);
-        enablePaypalDonations(false);
-        enableFlattrDonations(false);
-        enableBitcoinDonations(false);
-        enableLicenseCheck(false);
-        enableAmazonInstalls(false);
-        setGooglePubkey("insert key here");
+        int notifType = getIntent().getIntExtra("notifType", 2);
 
         Intent intent = new Intent(HomeActivity.this, jahirfiquitiva.iconshowcase.activities.ShowcaseActivity.class);
+
+        intent.putExtra("installer", getAppInstaller());
+
+        intent.putExtra("launchNotifType", notifType);
+
+        intent.putExtra("curVersionCode", getAppCurrentVersionCode());
+
+        intent.putExtra("enableDonations", ENABLE_DONATIONS);
+        intent.putExtra("enableGoogleDonations", ENABLE_GOOGLE_DONATIONS);
+        intent.putExtra("enablePayPalDonations", ENABLE_PAYPAL_DONATIONS);
+        intent.putExtra("enableFlattrDonations", ENABLE_FLATTR_DONATIONS);
+        intent.putExtra("enableBitcoinDonations", ENABLE_BITCOIN_DONATIONS);
+
+        intent.putExtra("enableLicenseCheck", (ENABLE_LICENSE_CHECK && !BuildConfig.DEBUG));
+        intent.putExtra("enableAmazonInstalls", ENABLE_AMAZON_INSTALLS);
+
+        intent.putExtra("googlePubKey", GOOGLE_PUBLISHER_KEY);
+
         startActivity(intent);
 
         finish();
 
+    }
+
+    private String getAppInstaller() {
+        return getPackageManager().getInstallerPackageName(getPackageName());
+    }
+
+    private int getAppCurrentVersionCode() {
+        try {
+            PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+            return packageInfo.versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            Utils.showLog(this, "Unable to get version code. Reason: " + e.getLocalizedMessage());
+            return -1;
+        }
     }
 
 }
