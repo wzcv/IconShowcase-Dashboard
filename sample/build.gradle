@@ -54,7 +54,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'com.github.jahirfiquitiva:IconShowcase:808553d@aar'
+    compile 'com.github.jahirfiquitiva:IconShowcase:1.8@aar'
 
 	//Android support libraries needed to build the sample
     compile 'com.android.support:appcompat-v7:23.3.0@aar'
