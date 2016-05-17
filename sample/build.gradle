@@ -47,6 +47,9 @@ android {
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        aaptOptions {
+            noCompress 'zip', 'komp', 'klwp', 'kwgt', 'klck', 'kwch'
+        }
     }
 }
 
@@ -54,7 +57,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.2@aar'
+    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.3@aar'
 
     //Android support libraries needed to build the sample
     compile 'com.android.support:appcompat-v7:23.4.0@aar'
@@ -85,6 +88,11 @@ dependencies {
     //Glide Library - Image Loading Lib
     compile 'com.github.bumptech.glide:glide:3.8.0-SNAPSHOT'
 
+    //Sectioned RecyclerView
+    compile('com.afollestad:sectioned-recyclerview:0.2.2') {
+        transitive = true
+    }
+
     //Muzei API
     //noinspection GradleDynamicVersion
     compile 'com.google.android.apps.muzei:muzei-api:2.+'
@@ -100,5 +108,9 @@ dependencies {
 
     //Required for better Zooper setup
     compile 'io.reactivex:rxandroid:1.1.0'
+
+    //Required for Kustom support.
+    //noinspection GradleDynamicVersion
+    compile 'org.bitbucket.frankmonza:kustomapi:+'
 
 }
