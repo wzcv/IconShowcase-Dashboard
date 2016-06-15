@@ -23,7 +23,7 @@
   -->
 
 <manifest
-    package="jahirfiquitiva.apps.iconshowcase.sample"
+    package="jahirfiquitiva.apps.iconshowcase.sampleip"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -38,6 +38,11 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- Uncomment if you're going to implement in-app purchases for donations
+    <uses-permission android:name="com.android.vending.BILLING" />
+    -->
+
 
     <supports-screens
         android:anyDensity="true"

@@ -13,11 +13,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "jahirfiquitiva.apps.iconshowcase.sample"
+        applicationId "jahirfiquitiva.apps.iconshowcase.sampleip"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 10
-        versionName "1.0"
+        versionCode 196
+        versionName "1.9.6"
         generatedDensities = []
     }
 
@@ -30,6 +30,7 @@ android {
             res.srcDirs = [
                     'src/main/res',
                     'src/main/res/drawable',
+                    'src/main/res/drawable/dashboard',
                     'src/main/res/drawable/designer',
                     'src/main/res/drawable/icon_pack',
                     'src/main/res/drawable/launchers_icons',
@@ -57,7 +58,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.4@aar'
+    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.6@aar'
 
     //Android support libraries needed to build the sample
     compile 'com.android.support:appcompat-v7:23.4.0@aar'
@@ -70,20 +71,17 @@ dependencies {
     compile 'com.android.support:customtabs:23.4.0'
 
     //Material Dialogs
-    compile('com.afollestad.material-dialogs:core:0.8.5.8@aar') {
+    compile('com.afollestad.material-dialogs:core:0.8.5.9@aar') {
         transitive = true
     }
 
     //Material Drawer
-    compile('com.mikepenz:materialdrawer:5.2.6@aar') {
+    compile('com.mikepenz:materialdrawer:5.3.0@aar') {
         transitive = true
     }
 
-    //Material icons fonts
-    compile 'com.mikepenz:google-material-typeface:2.2.0.1@aar'
-
     //OkHttp
-    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
 
     //Glide Library - Image Loading Lib
     compile 'com.github.bumptech.glide:glide:3.8.0-SNAPSHOT'
@@ -105,6 +103,9 @@ dependencies {
 
     //Donations Lib
     compile 'org.sufficientlysecure:donations:2.4'
+
+    //License Checker Lib
+    compile 'com.github.javiersantos:PiracyChecker:0.0.2'
 
     //Required for better Zooper setup
     compile 'io.reactivex:rxandroid:1.1.0'

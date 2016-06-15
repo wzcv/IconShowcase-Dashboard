@@ -71,6 +71,9 @@ proguard/
 # Temp files for KDE and other Editor's 
 *~
 
+# Something something
+*/values/jahir.xml
+
 #############################################################################
 # Android Studio related files
 #############################################################################
