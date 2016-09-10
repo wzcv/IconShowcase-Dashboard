@@ -115,7 +115,7 @@ Thanks to her, IconShowcase is completely free and open-source.
 
 # Library source
 
-Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff. The result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility.
+Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff. The result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility. We do **not** provide support when using library source. This source is here just for experienced people and/or developers. Finally, be sure to check the license terms before publishing your works.
 
     
 # License
