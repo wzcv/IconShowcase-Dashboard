@@ -13,8 +13,11 @@
 </p>
 
 <p align="center">
-	<a target="_blank" href='https://play.google.com/store/apps/details?id=jahirfiquitiva.apps.iconshowcase.sampleip'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='240'/></a>
 	<a href='https://pledgie.com/campaigns/32739'><img alt='Click here to lend your support to: Support Jahir Fiquitiva education and works and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/32739.png?skin_name=chrome' border='0' ></a>
+</p>
+
+<p align="center">
+	<a target="_blank" href='https://play.google.com/store/apps/details?id=jahirfiquitiva.apps.iconshowcase.sampleip'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='240'/></a>
 </p>
 
 # Previews
