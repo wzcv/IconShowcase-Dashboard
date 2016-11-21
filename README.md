@@ -10,7 +10,10 @@
 	<a target="_blank" href="https://github.com/jahirfiquitiva/IconShowcase/releases/tag/1.9.6.1"><img src="https://img.shields.io/badge/version-1.9.6.1-00C853.svg"></a>
 	<a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/legalcode"><img src="https://img.shields.io/badge/license-CC%20BY%20SA-01579B.svg"></a>
 	<img src="https://img.shields.io/badge/API-16%2B-7ac143.svg">
-	<a target="_blank" href="http://bit.ly/DonateJahir1" title="Donate using PayPal"><img src="https://img.shields.io/badge/paypal-donate-FFC107.svg" /></a>
+</p>
+
+<p align="center">
+	<a href='https://pledgie.com/campaigns/32739'><img alt='Click here to lend your support to: Support Jahir Fiquitiva education and works and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/32739.png?skin_name=chrome' border='0' ></a>
 </p>
 
 <p align="center">
@@ -90,9 +93,7 @@ Help making IconShowcase available in more languages. [Click here to go to the t
 	* Web: https://www.jahirfiquitiva.me/
 	* Google+: https://plus.google.com/+JahirFiquitivaJDev/
 	* [Donate](https://pledgie.com/campaigns/32739)
-
-
-
+	
 * Allan Wang
 	* Web: http://allanwang.ca/dev/
 	* Google+: https://plus.google.com/+AllanWPitchedApps/
@@ -129,12 +130,16 @@ Thanks to her, IconShowcase is completely free and open-source.
 
 # Library source
 
+<<<<<<< HEAD
 Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff, the result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility.
 
 We do **NOT** provide support when using library source. This source is here just for experienced people and/or developers.
 
 Finally, be sure to check the license terms before publishing your works. Projects or apps that do not comply with the license terms, will be reported.
 
+=======
+Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff. The result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility. We do **not** provide support when using library source. This source is here just for experienced people and/or developers. Finally, be sure to check the license terms before publishing your works.
+>>>>>>> f626cd10b4ab72fd0f1f60da4b0e849125e2849d
 
 # License
 
