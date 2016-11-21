@@ -67,8 +67,6 @@ Everything you need to know can be found in the [Wiki site](https://github.com/j
 - Zooper and Kustom (widgets, wallpapers and komponents) support.
 - Credits section.
 - Settings section with these options:
-	[//]: # (-Option to change app theme (Light, Dark, Auto).)
-	[//]: # (- Option to color navigation bar (Lollipop+).)
 	- Option to clear app cache.
 	- Option to enable notifications (for new wallpapers and general news).
 	- Option to change where to download wallpapers.
@@ -80,6 +78,9 @@ Everything you need to know can be found in the [Wiki site](https://github.com/j
 - Lots of customizations.
 - Dashboard texts are translated to more than 10 languages, and more will come with time.
 - Works with Android 4.1 and newer.
+
+[comment]: <> (-Option to change app theme (Light, Dark, Auto).)
+[comment]: <> (-Option to color navigation bar (Lollipop+).)
 
 
 # Help translating
@@ -130,16 +131,12 @@ Thanks to her, IconShowcase is completely free and open-source.
 
 # Library source
 
-<<<<<<< HEAD
 Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff, the result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility.
 
 We do **NOT** provide support when using library source. This source is here just for experienced people and/or developers.
 
 Finally, be sure to check the license terms before publishing your works. Projects or apps that do not comply with the license terms, will be reported.
 
-=======
-Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff. The result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility. We do **not** provide support when using library source. This source is here just for experienced people and/or developers. Finally, be sure to check the license terms before publishing your works.
->>>>>>> f626cd10b4ab72fd0f1f60da4b0e849125e2849d
 
 # License
 
