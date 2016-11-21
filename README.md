@@ -4,7 +4,7 @@
 	<img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/icon.png" width="144">
 </p>
 
-<h4 align="center">Full-of-features, easy-to-customize, free and open source, Material Design based dashboard for icon packs.</h4>
+<h4 align="center">Full-of-features, easy-to-customize, free and open source, Material Design dashboard for icon packs.</h4>
 
 <p align="center">
 	<a target="_blank" href="https://github.com/jahirfiquitiva/IconShowcase/releases/tag/1.9.6.1"><img src="https://img.shields.io/badge/version-1.9.6.1-00C853.svg"></a>
@@ -33,24 +33,39 @@
 <img src="https://raw.githubusercontent.com/jahirfiquitiva/IconShowcase/master/art/11.png" width="400">
 </p>
 
-# Features:
+# How to Implement?
 
-- Material Design inspired/based dashboard.
+Everything you need to know can be found in the [Wiki site](https://github.com/jahirfiquitiva/IconShowcase-Dashboard/wiki).
+
+# Why IconShowcase?
+- IconShowcase is the **FIRST** and **ONLY** dashboard translated to **more than 10** languages.
+- IconShowcase is the **FIRST** and **ONLY** dashboard that allows you to send notifications to your users.
+- IconShowcase is the **ONLY** dashboard that provides support for **more than 24** launchers.
+- IconShowcase is the **FIRST** and **ONLY** dashboard that gives you `appfilter.xml`, `appmap.xml` and `theme_resources.xml` with each icon request. (Those are the files you need to support the most of launchers).
+- IconShowcase was the **first** dashboard that included support for Kustom.
+- IconShowcase is fully compatible with all devices and all android versions from Android 4.1 JellyBean.
+- Compared to other dashboard, IconShowcase **actually** follows Material Design guidelines.
+- Want more reasons? Check the features below.
+
+# Features:
+- Material Design dashboard.
 - License Checker.
 - Changelog shown with every update.
 - Previews section, where user can see and search for themed icons which organized by categories.
 - Clickable icons in previews section, showing the icon and app name in a dialog.
 - Cloud based (only) wallpapers.
-- Wallpapers can be applied, cropped or downloaded. Wallpapers include a full-screen viewer with zooming capabilities.
-- Muzei support.
-- In-app icon request tool. Fully functional. Without duplicates and incredibly fast. This tool generates 'appfilter.xml', 'theme_resources.xml' and 'appmap.xml' which are the needed files for icon packs designers to be able to provide support to as many launchers as possible.
+- Wallpapers can be applied, cropped or downloaded.
+	- Wallpapers include a full-screen viewer with zooming capabilities.
+	- Option to change the columns amount in wallpapers section.
+- Muzei Live Wallpaper support.
+- In-app icon request tool. Fully functional. Without duplicates and incredibly fast. This tool generates 'appfilter.xml', 'theme_resources.xml' and 'appmap.xml' which are the needed files for icon packs designers to be able to provide support the most of launchers.
 - Apply section with 26 supported launchers. Launchers are sorted by installed first, and alphabetically.
 - FAQs section, to answer the questions your users have.
 - Zooper and Kustom (widgets, wallpapers and komponents) support.
 - Credits section.
 - Settings section with these options:
-	- Option to change app theme (Light, Dark, Auto).
-	- Option to color navigation bar (Lollipop+).
+	[//]: # (-Option to change app theme (Light, Dark, Auto).)
+	[//]: # (- Option to color navigation bar (Lollipop+).)
 	- Option to clear app cache.
 	- Option to enable notifications (for new wallpapers and general news).
 	- Option to change where to download wallpapers.
@@ -58,16 +73,10 @@
 - Analog clock widget.
 - Widget/Shortcut to open the app. (In case users hide the icon).
 - Tablet layouts.
-- Full Marshmallow support.
 - App works as a gallery so users are able to pick pictures to use them in other apps.
 - Lots of customizations.
 - Dashboard texts are translated to more than 10 languages, and more will come with time.
-- Requires API 16+ (Android 4.1+).
-
-
-# How to Implement
-
-Everything you need to know can be found in the [Wiki site](https://github.com/jahirfiquitiva/IconShowcase-Dashboard/wiki).
+- Works with Android 4.1 and newer.
 
 
 # Help translating
@@ -78,8 +87,15 @@ Help making IconShowcase available in more languages. [Click here to go to the t
 # Developed By
 
 * Jahir Fiquitiva
-* Web: http://www.jahirfiquitiva.net/
-* Google+: https://plus.google.com/+JahirFiquitivaJDev/posts
+	* Web: https://www.jahirfiquitiva.me/
+	* Google+: https://plus.google.com/+JahirFiquitivaJDev/
+	* [Donate](https://pledgie.com/campaigns/32739)
+
+
+
+* Allan Wang
+	* Web: http://allanwang.ca/dev/
+	* Google+: https://plus.google.com/+AllanWPitchedApps/
 
 
 # Special Thanks
@@ -88,7 +104,6 @@ Help making IconShowcase available in more languages. [Click here to go to the t
 Thanks to her, IconShowcase is completely free and open-source.
 
 ### Development contributors
-- [Allan Wang](https://plus.google.com/+AllanWPitchedApps/posts)
 - [Joaquin Cuitiño](https://plus.google.com/+JoaquinCuitiñoF/posts)
 - [Patrick Jung](https://plus.google.com/+PatrickJung42/posts)
 - [Steve Albright](https://plus.google.com/111777412946608276908/auto)
@@ -98,7 +113,6 @@ Thanks to her, IconShowcase is completely free and open-source.
 - [James Fenn](https://plus.google.com/+JamesFennJAFFA2157/posts)
 - [Aidan Follestad](http://www.aidanfollestad.com/)
 - [Mike Penz](http://portfolio.mikepenz.com/)
-- [Dani Mahardika](https://plus.google.com/+DaniMahardhika/posts)
 
 ### UI Design Collaborators
 - [Patryk Goworowski](https://plus.google.com/109304801957014561872/posts)
@@ -111,13 +125,17 @@ Thanks to her, IconShowcase is completely free and open-source.
 
 ### App Icon Creator
 - [Eduardo Pratti](https://plus.google.com/+EduardoPratti/posts)
-    
+
 
 # Library source
 
-Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff. The result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility.
+Find the complete library source [here](https://github.com/jahirfiquitiva/IconShowcase), in case you want to do some extra modifications and stuff, the result of such modifications (either success, errors, crashes, etc.) must be completely under your own risk and responsibility.
 
-    
+We do **NOT** provide support when using library source. This source is here just for experienced people and/or developers.
+
+Finally, be sure to check the license terms before publishing your works. Projects or apps that do not comply with the license terms, will be reported.
+
+
 # License
 
 This app is shared under the CreativeCommons Attribution-ShareAlike license.

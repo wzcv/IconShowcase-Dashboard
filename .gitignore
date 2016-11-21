@@ -90,4 +90,5 @@ proguard/
 .DS_Store
 /build
 /captures
+/projectFilesBackup
 >>>>>>> 059150e5bf96ad06afc01e351d926c757ef87a6f
