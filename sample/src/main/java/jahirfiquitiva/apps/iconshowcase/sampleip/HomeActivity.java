@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
             ENABLE_FLATTR_DONATIONS = false,
             ENABLE_BITCOIN_DONATIONS = false,
 
-    ENABLE_LICENSE_CHECK = true,
+    ENABLE_LICENSE_CHECK = false,
             ENABLE_AMAZON_INSTALLS = false;
 
     private static final String GOOGLE_PUBLISHER_KEY = "insert_key_here";
