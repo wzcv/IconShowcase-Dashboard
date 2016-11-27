@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2016.  Jahir Fiquitiva
+  ~ Copyright (c) 2016 Jahir Fiquitiva
   ~
   ~ Licensed under the CreativeCommons Attribution-ShareAlike
   ~ 4.0 International License. You may not use this file except in compliance
@@ -14,12 +14,8 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   ~
-  ~ Big thanks to the project contributors. Check them in the repository.
-  ~
-  -->
-
-<!--
-  ~
+  ~ Special thanks to the project contributors and collaborators
+  ~ 	https://github.com/jahirfiquitiva/IconShowcase#special-thanks
   -->
 
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
@@ -33,8 +29,7 @@
     <string name="artsource_name">@string/app_name</string>
     <string name="artsource_desc">Some cool wallpapers</string>
 
-    <string name="json_file_url">http://www.jahirfiquitiva.net/wallpapers/iconshowcase.json</string>
-    <string name="notifications_file_url">http://www.jahirfiquitiva.net/iconshowcase/notifs.json</string>
+    <string name="wallpapers_json_link">https://github.com/jahirfiquitiva/Website-Resources/raw/master/iconshowcase/iconshowcase.json</string>
 
     <!-- Icon Pack designer/owner e-mail -->
     <string name="email_id">someone@email.com</string>
@@ -61,7 +56,6 @@
     <!-- TEXTS TO BE USED IN ABOUT SECTION -->
 
     <string name="iconpack_author_name">Your Name</string>
-    <string name="iconpack_author">@string/iconpack_author_name</string>
     <string name="iconpack_author_photo" formatted="false" tools:ignore="TypographyDashes">https://lh3.googleusercontent.com/-0mdcClKXlgM/AAAAAAAAAAI/AAAAAAAAAAA/xgdLWeAg7pM/s120-c/photo.jpg</string>
     <string name="iconpack_author_banner" formatted="false" tools:ignore="TypographyDashes">https://lh5.googleusercontent.com/-eAPognoXTwE/UYFKq101UyI/AAAAAAAABiY/REl1Ei8txP8/w1600-h900/default_cover_5_ff9ff46d48dc181084c9c23a120b68d8.jpg</string>
     <string name="iconpack_author_description">I am a designer and I love this dashboard. This is just a sample text. You can edit it with your own short bio.</string>
@@ -72,7 +66,7 @@
     <string name="iconpack_author_twitter">twitter://user?screen_name=jahirfiquitiva</string>
     <string name="iconpack_author_twitter_alt">https://twitter.com/#!/jahirfiquitiva</string>
     <string name="iconpack_author_playstore">https://play.google.com/store/apps/dev?id=7438639276314720952</string>
-    <string name="iconpack_author_website">http://www.jahirfiquitiva.net/</string>
+    <string name="iconpack_author_website">https://www.jahirfiquitiva.me/</string>
     <string name="iconpack_author_youtube">https://www.youtube.com/channel/UCBTheBoZEA1p95HyjEHqouA</string>
 
     <string-array name="iconpack_author_sites">
@@ -113,7 +107,7 @@
     <!-- These things are needed for some launchers (Feel free to edit, though is not needed) -->
     <string name="theme_title">@string/app_name</string>
     <string name="theme_name">@string/theme_title</string>
-    <string name="developer_name">@string/iconpack_author</string>
+    <string name="developer_name">@string/iconpack_author_name</string>
     <string name="developerName">@string/developer_name</string>
     <string name="theme_author">@string/developer_name</string>
     <string name="authorName">@string/developer_name</string>

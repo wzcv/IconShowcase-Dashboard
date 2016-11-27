@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016.  Jahir Fiquitiva
+ * Copyright (c) 2016 Jahir Fiquitiva
  *
  * Licensed under the CreativeCommons Attribution-ShareAlike
  * 4.0 International License. You may not use this file except in compliance
@@ -13,12 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Big thanks to the project contributors. Check them in the repository.
- *
- */
-
-/*
- *
+ * Special thanks to the project contributors and collaborators
+ * 	https://github.com/jahirfiquitiva/IconShowcase#special-thanks
  */
 
 package jahirfiquitiva.apps.iconshowcase.sampleip;
@@ -29,8 +25,10 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import jahirfiquitiva.iconshowcase.utilities.Utils;
-
+import jahirfiquitiva.iconshowcase.utilities.LauncherIntents;
+import jahirfiquitiva.iconshowcase.utilities.utils.NotificationUtils;
+import jahirfiquitiva.iconshowcase.utilities.utils.Utils;
+import timber.log.Timber;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -50,14 +48,35 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Class service = FirebaseService.class;
+        Bundle bundle = getIntent().getExtras();
+        if (NotificationUtils.hasNotificationExtraKey(this, getIntent(), "open_link", service)) {
+            Utils.openLink(this, getIntent().getStringExtra("open_link"));
+        } else {
+            if ((getIntent().getDataString() != null && getIntent().getDataString().equals
+                    ("apply_shortcut"))
+                    && (Utils.getDefaultLauncherPackage(this) != null)) {
+                try {
+                    new LauncherIntents(this, Utils.getDefaultLauncherPackage(this));
+                } catch (IllegalArgumentException ex) {
+                    runIntent(service);
+                }
+            } else {
+                runIntent(service);
+            }
+        }
+        finish();
+    }
 
-        int notifType = getIntent().getIntExtra("notifType", 2);
+    private void runIntent(Class service) {
+        Intent intent = new Intent(HomeActivity.this, jahirfiquitiva.iconshowcase.activities
+                .ShowcaseActivity.class);
 
-        Intent intent = new Intent(HomeActivity.this, jahirfiquitiva.iconshowcase.activities.ShowcaseActivity.class);
+        intent.putExtra("open_wallpapers",
+                NotificationUtils.isNotificationExtraKeyTrue(this, getIntent(), "open_walls",
+                        service));
 
         intent.putExtra("installer", getAppInstaller());
-
-        intent.putExtra("launchNotifType", notifType);
 
         intent.putExtra("curVersionCode", getAppCurrentVersionCode());
 
@@ -67,15 +86,18 @@ public class HomeActivity extends AppCompatActivity {
         intent.putExtra("enableFlattrDonations", ENABLE_FLATTR_DONATIONS);
         intent.putExtra("enableBitcoinDonations", ENABLE_BITCOIN_DONATIONS);
 
+        //noinspection PointlessBooleanExpression
         intent.putExtra("enableLicenseCheck", (ENABLE_LICENSE_CHECK && !BuildConfig.DEBUG));
         intent.putExtra("enableAmazonInstalls", ENABLE_AMAZON_INSTALLS);
 
         intent.putExtra("googlePubKey", GOOGLE_PUBLISHER_KEY);
 
+        if (getIntent().getDataString() != null && getIntent().getDataString().contains
+                ("_shortcut")) {
+            intent.putExtra("shortcut", getIntent().getDataString());
+        }
+
         startActivity(intent);
-
-        finish();
-
     }
 
     private String getAppInstaller() {
@@ -87,7 +109,7 @@ public class HomeActivity extends AppCompatActivity {
             PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
             return packageInfo.versionCode;
         } catch (PackageManager.NameNotFoundException e) {
-            Utils.showLog(this, "Unable to get version code. Reason: " + e.getLocalizedMessage());
+            Timber.d("Unable to get version code. Reason:", e.getLocalizedMessage());
             return -1;
         }
     }

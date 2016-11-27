@@ -17,27 +17,24 @@
  * 	https://github.com/jahirfiquitiva/IconShowcase#special-thanks
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package jahirfiquitiva.apps.iconshowcase.sampleip;
 
-buildscript {
-    repositories {
-        jcenter()
+import com.google.firebase.messaging.FirebaseMessagingService;
+import com.google.firebase.messaging.RemoteMessage;
+
+import jahirfiquitiva.iconshowcase.utilities.utils.NotificationUtils;
+
+public class FirebaseService extends FirebaseMessagingService {
+
+    @Override
+    public void onMessageReceived(RemoteMessage remoteMessage) {
+        if (remoteMessage.getNotification() != null) {
+            NotificationUtils.sendFirebaseNotification(this,
+                    HomeActivity.class,
+                    remoteMessage.getData(),
+                    remoteMessage.getNotification().getTitle(),
+                    remoteMessage.getNotification().getBody());
+        }
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
-		classpath 'com.google.gms:google-services:3.0.0'
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
-allprojects {
-    repositories {
-        jcenter()
-    }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
