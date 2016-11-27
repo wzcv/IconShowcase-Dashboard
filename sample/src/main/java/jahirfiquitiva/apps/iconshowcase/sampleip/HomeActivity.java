@@ -49,7 +49,6 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Class service = FirebaseService.class;
-        Bundle bundle = getIntent().getExtras();
         if (NotificationUtils.hasNotificationExtraKey(this, getIntent(), "open_link", service)) {
             Utils.openLink(this, getIntent().getStringExtra("open_link"));
         } else {
