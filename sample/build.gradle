@@ -27,8 +27,8 @@ ext {
     TARGET_SDK = 25
     BUILD_TOOLS = "25.0.1"
     ANDROID_SUPPORT_LIBS = "25.0.1"
-    VERSIONCODE = 1962
-    VERSIONNAME = "1.9.6.2"
+    VERSIONCODE = 1973
+    VERSIONNAME = "1.9.7.3"
     APP_TAG = "IconShowcaseSample"
 }
 
@@ -88,7 +88,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'com.github.jahirfiquitiva:IconShowcase:1dc0ffd'
+    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.7.3'
 	
     //Firebase Notifications
     compile 'com.google.firebase:firebase-messaging:9.8.0'
