@@ -36,6 +36,13 @@ android {
     compileSdkVersion TARGET_SDK
     buildToolsVersion BUILD_TOOLS
 
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            output.outputFile = new File(output.outputFile.parent,
+                    "${APP_TAG}-v${variant.versionName}.apk")
+        }
+    }
+
     lintOptions {
         abortOnError false
     }
@@ -47,13 +54,6 @@ android {
         versionCode VERSIONCODE
         versionName VERSIONNAME
         vectorDrawables.useSupportLibrary = true
-    }
-
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-            output.outputFile = new File(output.outputFile.parent,
-                    "${APP_TAG}-v${variant.versionName}.apk")
-        }
     }
 
     sourceSets {
@@ -82,13 +82,14 @@ android {
             noCompress 'zip', 'komp', 'klwp', 'kwgt', 'klck', 'kwch'
         }
     }
+
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //Main library
-    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.7.3'
+    compile 'com.github.jahirfiquitiva:IconShowcase:1.9.7.4'
 	
     //Firebase Notifications
     compile 'com.google.firebase:firebase-messaging:9.8.0'
